@@ -1,7 +1,7 @@
 {
   "name": "encrypt-at-rest",
   "version": "1.0.0",
-  "description": "Simple encrypt/decrypt functions for Node.js",
+  "description": "Simple, secure encryption-at-rest for Node with AES 256 GCM",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
@@ -10,8 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "github.com/zachelrath/encrypt-at-rest"
+    "url": "git@github.com:zachelrath/encrypt-at-rest.git"
   },
+  "contributors": [
+    "Zach McElrath <zmcelrath87@gmail.com>"
+  ],
   "keywords": [
     "encrypt",
     "decrypt",
