@@ -1,5 +1,5 @@
 {
-  "name": "basic-node-encryption",
+  "name": "encrypt-at-rest",
   "version": "1.0.0",
   "description": "Simple encrypt/decrypt functions for Node.js",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "github.com/zachelrath/basic-node-encryption"
+    "url": "github.com/zachelrath/encrypt-at-rest"
   },
   "keywords": [
     "encrypt",
