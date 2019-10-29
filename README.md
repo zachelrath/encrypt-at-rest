@@ -1,5 +1,7 @@
 # encrypt-at-rest
 
+[![Build Status](https://travis-ci.org/zachelrath/encrypt-at-rest.svg?branch=master)](https://travis-ci.org/zachelrath/encrypt-at-rest)
+
 Simple, secure, forward-proof encryption at rest for Node using AES 256 GCM, with support for multiple master encryption keys.
 
 ```javascript
