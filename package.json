@@ -1,0 +1,23 @@
+{
+  "name": "basic-node-encryption",
+  "version": "1.0.0",
+  "description": "Simple encrypt/decrypt functions for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "generate-encryption-key": "node ./generate-encryption-key.js",
+    "test": "node ./tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/zachelrath/basic-node-encryption"
+  },
+  "keywords": [
+    "encrypt",
+    "decrypt",
+    "encryption",
+    "crypto"
+  ],
+  "author": "Zach McElrath",
+  "license": "MIT"
+}
