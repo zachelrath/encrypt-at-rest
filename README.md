@@ -18,7 +18,7 @@ decrypt(encrypted); // "something"
 # Installation
 
 ```bash
-npm i 
+npm i encrypt-at-rest --save
 ```
 
 # Usage
@@ -66,7 +66,7 @@ strictEqual(inputValue, decrypt(encryptedValue));
 
 ```
 
-## Load multiple keys, e.g. from KMS
+## Load multiple keys
 
 ```javascript
 const {
@@ -74,7 +74,8 @@ const {
 	loadKey,
 } = require("encrypt-at-rest");
 
-// example: the serialized encryption key is loaded via an environment variable
+// Encryption keys should be stored in and retrieved from a secure environment, e.g. AWS KMS,
+// and loaded at runtime into the app.
 let allKeys = await keysTable.fetchAll();
 allKeys.forEach(keyRow => {
 	const key = loadKey(createKey(keyRow.get("id"), keyRow.get("value"));
@@ -82,7 +83,12 @@ allKeys.forEach(keyRow => {
 		key.markCurrent();
 	}
 });
+```
 
 # Contributing
 
-This repo intentionally has no dependencies to keep it as lightweight as possible, including dev dependencies. `npm i eslint -g` to lint. Tests are written using native node assertions.
+This repo intentionally has no dependencies to keep it as lightweight as possible, including dev dependencies.
+
+Lint: `npm i eslint -g && npm run lint`
+
+Test: `npm test`. Tests are written using native node assertions.
